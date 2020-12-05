@@ -1,10 +1,10 @@
 <template>
   <section>
-    <h1 class="title">Anime: {{ anime.name }}</h1>
+    <h1 class="">Anime: {{ anime.name }}</h1>
     <ul>
       <li v-for="({ videoId, name }, vIndex) in videos" :key="vIndex">
         <h2>{{ name }}</h2>
-        <Video :videoId="videoId" />
+        <Video :video-id="videoId" />
       </li>
     </ul>
   </section>
